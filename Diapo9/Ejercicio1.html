@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<style type="text/css">
+		.wrapper{
+			display: inline-block;
+			border:solid; 
+			border-color: #1C2640;
+			width: 500px;
+			margin: 10PX;
+			padding: 10PX;
+
+		}
+		.formulario2{
+			display: inline-block;
+			width: 700px;
+			border:solid; 
+			border-color: blue;
+			border-color: #1C2640;
+			margin: 10PX;
+			padding: 10PX;
+		}
+
+      	.dni{
+      	display: inline-block;
+      	width: 70px;
+      
+
+		}
+
+		body{
+			font-family: timesnewroman
+			width:1500px;
+
+
+		}
+      label{
+      	display: inline-block;
+      	width: 70px;
+      }
+
+
+
+	</style>
+
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<h1>User Input Form</h1>
+		<form action ="login.php" autocomplete="off" method="post">
+			<fieldset>
+				<legend><h2>Personal Particular</h2></legend>
+
+				<label for="txt_usuario">Name:</label>
+				<input type="text" name="name" id="txt_name" /> <br /><br />
+
+
+				<label for="pwd_clave">Password:</label>
+				<input type="password" name="pwd" id="pwd_clave" /> <br />
+
+				<br />
+				<label for="text_gender">Gender:</label>
+				<input type="radio" name="sexo" value="male"  />
+				<label>Male</label>
+
+				<input type="radio" name="sexo" value="female">
+				<label>Female</label>
+
+				<br /><br />
+				<select name="age">
+					<option selected="selected" value="<1yearold">< 1 year old </option>
+					<option selected="selected" value="<<5year<old">< 5 years old</option>
+					<option selected="selected" value="<<10year<old">< 10 years old</option>
+					<option selected="selected" value="<<18year<old">< 18 years old</option>
+				</select>
+
+
+
+
+			</fieldset>
+			<fieldset>
+				<legend><h2>Languages</h2></legend>
+				<div id="languages">
+					<input type="checkbox" name="java" value="java" id="languages">
+					<label>Java</label>
+
+					<input type="checkbox" name="CC++" value="CC++" id="languages">
+					<label>CC++</label>
+
+					<input type="checkbox" name="C#" value="C#" id="languages">
+					<label>C#</label>
+				</div>
+				</fieldset>
+
+
+			<fieldset>
+				<legend><h2>Instruction</h2></legend>
+					<textarea rows="10" cols="50">Enter your instruction here...</textarea>
+
+
+				</fieldset>
+		
+
+			<br/>
+
+			<input type="submit" value="SUBMIT" />
+			<input type="reset" value="CLEAR" />
+
+		</form>
+
+	</div>
+			<br />
+			<br />
+	<div class="formulario2">
+		<h1>Formulario estructurado</h1>
+		<form action ="login.php" autocomplete="off" method="post">
+				<fieldset>
+				<legend><h2>Datos personales</h2></legend>
+
+				<label for="txt_nombre">Nombre:</label>
+				<br />
+				<input type="text" name="nombre" id="txt_nombre" /> <br />
+
+
+				<label for="text_apellidos">Apellidos:</label>
+				<br />
+				<input type="apellidos" name="apellidos" id="apellidos" /> <br />
+
+				<br />
+	
+				<label for="dni">DNI:</label>
+
+				<br />
+						<input type="dni" name="dni" id="dni" maxlength="9" / class="dni"> 
+				<br />
+
+			</fieldset>
+
+			<fieldset>
+				<legend><h2>Datos de conexión</h2></legend>
+
+				<label for="txt_usuario">Nombre de usuario:</label><br />
+				<input type="text" name="nombre" id="txt_usuario" /> <br />
+
+			
+				<label for="pwd_clave">Contraseña:</label><br />
+				<input type="ppssword" name="pwd" id="pwd_clave" /><br />
+
+				<label for="pwd_clave">Repite contraseña:</label><br />
+				<input type="password" name="pwd" id="pwd_clave" /> <br />
+
+				</fieldset>
+
+
+			
+		</form>
+
+	</div>
+
+
+</body>
+
+
+</html>

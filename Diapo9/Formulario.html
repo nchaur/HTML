@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<style type="text/css">
+		
+      label{
+      	display: inline-block;
+      	width: 70px;
+      }
+
+      input{
+      	color: #5CB0C1;
+    
+      }
+
+	</style>
+
+</head>
+
+<body>
+	<form action ="login.php" autocomplete="off" method="post">
+		<fieldset>
+			<legend>Datos</legend>
+
+			<label for="txt_usuario">Usuario:</label>
+			<input type="text" name="usuario" id="txt_usuario" /> <br /><br />
+
+
+			<label for="pwd_clave">Clave:</label>
+			<input type="password" name="pwd" id="pwd_clave" /> <br />
+
+			<input type="radio" name="sexo" value="H" checked="checked" />
+			<label>Hombre</label>
+
+			<input type="radio" name="sexo" value="M">
+			<label>Mujer</label>
+
+
+
+		</fieldset>
+		<fieldset>
+			<legend>Vehículo</legend>
+				<input type="checkbox" name="bici" value="b">
+				<label>Bici</label> <br />
+
+				<input type="checkbox" name="moto" value="m">
+				<label>Moto</label> <br />
+
+				<input type="checkbox" name="coche" value="c">
+				<label>Coche</label> <br />
+
+				<input type="checkbox" name="furgoneta" value="f">
+				<label>Furgoneta</label> <br />	
+
+
+
+		</fieldset>
+		<br/>
+		<input type="submit" value="Enviar" />
+		<input type="reset" value="Borra" />
+
+	</form>
+
+</body>
+
+
+</html>
